@@ -1,24 +1,18 @@
-{
-  "kind": "SealedSecret",
-  "apiVersion": "bitnami.com/v1alpha1",
-  "metadata": {
-    "name": "mysql-credentials",
-    "namespace": "argocd",
-    "creationTimestamp": null
-  },
-  "spec": {
-    "template": {
-      "metadata": {
-        "name": "mysql-credentials",
-        "namespace": "argocd",
-        "creationTimestamp": null
-      },
-      "type": "Opaque"
-    },
-    "encryptedData": {
-      "connection": "AgCwPNo8CToOMbIYr97X2dhl6bbOUx5WNP1x7HofslBPsdkWQFBajaXfd9UxOKmc/61XRxXD2otYnqGGer4IvvddAO6KpsmcJEblvqDraHE/XnDwRXjLg/5VyyFcfQzqe0lenk5IpbUN8Ej5M9Q+4p2mzeIDDwSDXvB+mCPPU6work1fzA+wMmRF2TyJGWOpAIzaxLg5xihv77QZZgGjvqgbAAV+t8zsmRmo+tsXNJCcJGd6RpMyAFcBPrSK0FshwKap8BLyA4b340cMnh+499HXXmWIpCU9YpmDKSj4XsFgmGZDjlme4RW9oOJDftf6KUTtdyq6PD4h3H5d/RZls2AHGGJFuytLqf1XQaNQwnLx4XSkqKV7cU+jqVZhRlBaEri1TNrTYmMcuYGrln1H0Ge0caa94Nxr/hPfmQyouIXazHIBK+OblV+YPq4+MURIJDcxQJr+My3nT9M3xbs6Bw95iykA3mOV/zzM7f2QxxOAYKOouZN/AzNNmy8SgIxxCLcZGvbvag71f44NCXSyMUd44L3ZBEQ0+vwvbn6A6yJRhy3GyS7quW187bRl666tKWClOGPGE5K4Uf7mHiFHj14hV5pauPgxJ1WP0KX9PobAz7pMSgm4stLHbSRSFsx5mPsenRXXuWORyVeekci8TGftpwzC3E3ZwVtfFx9iDkD+ZgIWNxeC4MeIq9F5VoJj6pzeturK4eSJQNbeNsUMVLj/dDh1J0ooBgvCVTT6EGGjBB8=",
-      "password": "AgCX9QFdZ07W+HOb6G5YFh1SYYB+aek01E7aQPiduyDwwKDJE619qrb5tkz8ZzGEbVvfhJAD6h17sLfuLIM+DVrCRXqmw6fnPg4mMvpbgj8BbajeJdHkuO6g56ngtJdwCqkz92BzozNfAennoQEqd6mZEe2Dd2Om4yagtoNQRbRtZZq1du+bOKuRp8GRyJEpiBQIlRrMaV4BQX1SmpVgxxQjuEWSYcUSIBsTKv0EWgnv/9OjYbquB1DujMSY4/0PIAcCd7ZnMqto0MbnQUk8GXh2gewaAIXexwarJosKkrAlP3M692RSUajM04M677pYjzoK7u9oLAd1CzowpE7nlgOwoLxfEINll38pmYTLHcZ7jyc7p+i0qouNTPpLJ15Tc+J5Kac9ooUkcZgag8ZixsDoaLqIp2crTjwQPh+mSjpweKCNSFqd2lkWwaR5SPfGimf/g8npO8lhnDoOnBHT/yiPMdkrK8yrSi5wlI9dKlcdmT09zZXO3ojiiJy3ewvtYJF/ff0yX1+8Yn5bxdqQIrqY3GXyuxY4ZLPtG6rOY4FtNymMFvlpI0FDtjOtkNAmSDzR4ywnM8nqN9BUBN1GMT7RaWGjTS6bo+9hNywRmVaYhkZ8Lqzzcqx05dMe0LPrraqVjbb2bd3Sv7qqX5J1MBsNMzTyaIx4LA7G9SuMKyscFxHnfrfR//jnxjX6D/QvdM1wTCAFynS8fM/fI6UU05o=",
-      "username": "AgBK9AaeN4jkAjFbsion+G8PKv6eRxukgYHg1SvrVBURgkkmbpE1CDgPAwbgeUC5GlBfox6ADNExCvABk/kBR2chkAdSoCOE7AJJdR6BKxTiNwYzSc+g0EwR/H5oqFfBRTukAdfIHq9VtbTlYe48RPR1fgZVRaq0Lc9hk4ggFXYZkQW0jeiPzs/5tC0bb9Jow+3FdbbTukwXIhlZqCMWAEag4PIHv7tMo0VjJUi9eFuAFvK0GGs0V+6GLEwLgpIdTcoAMtpWO7StuvJlbVspi3ll6jaf6tPGLahXw3ixNcny5OHeLGWL7IzMAFlpKKwYR4P3D5WmKaUrAgqzpE1xd0W62fvCkc0K0P+gUzSToZQ8BHf0Lzzhll4DrTDuzMQnZYzcStkxJvhAjUtzSe2dU039LdN19GY0A5sYI7sgmX4bV3JoIt/dFh4b3VdzrCIbx7ZcvgHkUc3QPfOPxS2EHgAcvAirR3vbFujBTlNbjZBQcm2Cgm8ZGvkXZwV0MvTHEndYXV/CmIRvqVigRsYDnmml36soNRdpzkWRMbFBpLIZ56U8syJM9qA9X6D30oYcsUMFoRHYJyPPDyfQTFDym6re5NQQO7UmriWJfUAGrqnHbsjiT2ueOtGHzN9RwbRW+3zWgXJa7o8shRUw7wPzehyf+hkpLOmoaQiUIsIbYA6CdZgJAZPG8S2lzdBRBPKmIr93mhlAPGqRZnqrGg=="
-    }
-  }
-}
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: mysql-credentials
+  namespace: default
+spec:
+  encryptedData:
+    connection: AgC++BLYPX2AOc2cVJjWvLHyiNFckWv7vzGbUS0nD8ipoYIn6ckCU+iqmfUQs219O1TexB/L7SZrkHHdADo1KTEx7cme66TYmST79E/VJjlKzS6jg1ht8XlrGVlER9+J8nqM5jQpXZwg34V3VpndlkaHUmmFAmh9oJh+oh9lWjKxh9ZuXqoFsv95wswTqN9JrBV+VYVhFemCwZZJFzl07C9c5QAGlE0/IUggtfAoZdAy3fGaqxyzXipH+rZIveGiDBmOk/4Z7r2fRyuOfdoTHhMhpfuEKqOe7BrxwaYbFB0vVjNzcLxX4hBw3CyC2vCM7XqyQ7mCsriN1CHODJUfwVIrpuip7g/wIQ+M94VzioyRPpxdFzv+NzAPVRKip9+J159wp5pb527mLuq9Y+RBqzg1NGx1tB35PTbi3LOJFZqXv7lNaUfOYzGn/Zufo2HBEk6iX4luNB0g1BPebSu+ihu0YMg6XznO2xcYTMnGEhBy4WiyeBclp0NiXL92Z90MEYu8IqicsZA4GZ4Q1DXYRo1JlG6CAqnNKMFN0P1zsa1/ovY2LHgRH/6ooplzfTyn6Hdn+dLcFAu4VTol2z3qfnaBz8xkAQFQBKa+fc+zdzAhNfoZoQWevo42MIdpDyxNIGmwolEMrbW2o0cmTy8qAhlQa+dimAMrinNlynngGFTcsStHR+A3SNRIDf4Wvo0qQOz3qsGBk9jVK/Rcna5Yhe+ptnMiAbEx72ztOBSXOF+T3y8=
+    password: AgCWveRDwngiUhp3rAzWBrSAhx8/3VeKexqRkVCEMZT+jwqTbjyjCrTrxcwBt9Z5ig7YxAkV6t9Yw/HBkt310lHkedBC0MNX2R78rXBcgI3xY66wkmCvTJVAuGRWDAIWszNGbackmQyWOZjv28FobPuVxbr6p5KsvndEiXFFIsgD5WlS9ImlclOo3R3Fdle3Vt0hfAzfpht/okAo1DidwOYv6PhgRjV0LhlNitiOjbpUb5J/SpSVPTQFTdAFAF0ka6qpnprRHjiAxnnc38VdX99OvaEzlotZ/vkqP0UY5P44a63F1lfo618LU2YmanYl3P1N2CCNN+i+cLuJhjOymyn0XDba7FXN7z2YNCT0GBOq/ZsFz+2+9yQ64CWtEgasabZLJai3k6JrFSW85lysx3BsvBXcVac5c55PuOKtHwtMXe73eMk+YDW524rDchgStlgE9iEi067++d30BG2ryTpQRGWkpYIC8wWz1CnvEerMwQ1ahrFLHAieOq1pbKspwh6QZVlx+Wi8CdeM+bDJvaykAyS8e4q2N6d5yP0ulRpTo+1vGAhKU3brMNmRHtYjjJSKFOkYoaV8VoUAnv7bb8iJvuIKLe018xcfQvub3BAqPMibX0RPmoxaCcJdqqYNYmsdNg8UQd4utmhiL0/4/KfQK08Sr08j4DKkt4yCLC3xAfXHU1gWrVNVuOTSZ579V4gNmH+Lc/bPDIND6kQNozo=
+    username: AgBmoT4DWnT8qWoaqVnK2PMBhmj/flfG1c/9OH8bNhBha8DAWkZpucVoZ+rgu7peI87B2txtN3hjph3lOHPj8rcTDPW3dq0H8bsuCs06KPq6ud7a1taEan1gNaz6VqcXyQcz3fKmkF/DHhM+rcF74KzwmVelfnhlARwuJYmBasD9x+g/qKkkYEnkgvphtEMpkzyh92bhU+tkkuAf39+IxjbWTZ0Ngd4v8RB9BAeL2bTCN90SD1z6I1ZaZiCMYynm8Zs4/n+bgFYRUSIWbr1HTZIYJb1Cz/93jES5fBT49ukjGAH/IjkLKDUywmL0+EkBzDek4E6LoHDJgSZ8/o1IQQu5R3cxLWrAazQa2VuYvCTE0r4ocAys07VpNSn7KT4qowN1LrFht2g+D9HqOQ8hQjbsDirOo3qaU5QetmOvkQaOi5h0wziD50woYCJA9Dd3/rX+trYe2cIn62HRdX2zHK3x7GMFnmNi4HJt+F13tvM9ZyUuj5hGGK4c6mQxg1l1+8RmWZUVwzC/rNUpFqeA3xFCyHLweAXlRsu1giLqv9aPCAKpLtHP45px36s38/e4MkXi5v2Lc/YkyW8BTKrX6wVoFt0K4fKI2VSni3rjRODNSNvU8NTXYL7n8YT9SsTAHrE3fv4lk1WtKHFPor0uhvTL6Rhy2qUXOmg6zRYZ6qQ6oRXKbLz8x3F3RyGZD+eE+ftZr+ym+H1UA23+gw==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: mysql-credentials
+      namespace: default
+    type: Opaque
